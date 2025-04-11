@@ -22,9 +22,29 @@ if (require("electron-squirrel-startup")) app.quit();
 
 process.env.ELECTRON_NO_ATTACH_CONSOLE = true;
 
+//Default Configuration of CSK
+
 process.env.CONFIG_HOST = "admin.cloud-starter-kit.com";
 process.env.ADMIN_HOST = "admin.cloud-starter-kit.com";
 process.env.FILE_HOST = "kits.cloud-starter-kit.com";
+
+//Production configuration
+
+/* process.env.CONFIG_HOST = 'admin.cskingrammicro.com.au';
+process.env.ADMIN_HOST = 'admin.cskingrammicro.com.au';
+process.env.FILE_HOST = 'd2cfn5jr5y9smy.cloudfront.net';  */
+
+//Development configuration
+
+/* process.env.CONFIG_HOST = 'dev.admin.development.cskingrammicro.com.au';
+process.env.ADMIN_HOST = 'dev.admin.development.cskingrammicro.com.au';
+process.env.FILE_HOST = 'd37udhplmfi3rm.cloudfront.net'; */  
+
+//Staging configuration
+
+/* process.env.CONFIG_HOST = 'staging.admin.staging.cskingrammicro.com.au';
+process.env.ADMIN_HOST = 'staging.admin.staging.cskingrammicro.com.au';
+process.env.FILE_HOST = 'diwa6ei32le6s.cloudfront.net'; */
 
 const HOSTS = {
   CONFIG_HOST: process.env.CONFIG_HOST,
