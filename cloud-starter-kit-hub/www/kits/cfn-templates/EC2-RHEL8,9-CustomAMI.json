@@ -19,7 +19,7 @@
             "Default": "",
             "Description": "Enter custom AMI ID (only required if AMISelectionMethod is Custom). The latest RHEL Image Id (BYOS or PAYG) - Please input the latest Ami Id of RHEL image you want in that region. You can get the latest ami id from https://access.redhat.com/solutions/15356  Please follow the instructions at this site and get the image id from region you want and input in textbox here."
         },
-        "InstanceType": {
+        "VMInstanceType": {
             "Type": "String",
             "Default": "t3.micro",
             "AllowedValues": ["t3.micro", "t3.small", "t3.medium"],
@@ -218,7 +218,7 @@
                         }
                     ]
                 },
-                "InstanceType": { "Ref": "InstanceType" },
+                "InstanceType": { "Ref": "VMInstanceType" },
                 "KeyName": { "Ref": "KeyName" },
                 "SubnetId": { "Ref": "SubnetId" },
                 "SecurityGroupIds": [{ "Ref": "EC2SecurityGroup" }],

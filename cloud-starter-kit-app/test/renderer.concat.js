@@ -1,9 +1,11 @@
 
+
 /*
 * ###########################################
 * ## src/scripts/utilities.js
 * ###########################################
 */
+
 /*
  * Utility methods
  */
@@ -115,11 +117,13 @@ function convertRegionCodeToName(code) {
   return codes.hasOwnProperty(code) ? codes[code] : code;
 }
 
+
 /*
 * ###########################################
 * ## src/scripts/task-queue.js
 * ###########################################
 */
+
 // job queue, tracks until complete state but not longer than that
 let taskQueue = [];
 const TASK_TYPES = {
@@ -357,6 +361,7 @@ setInterval(showTaskQueueLength, 1000);
 * ## src/scripts/stack-monitoring.js
 * ###########################################
 */
+
 // the little bouncing box
 const bouncyBox = `<span class="la-square-jelly-box la-dark la-sm" style="margin-left: 3px; margin-right: 10px; margin-bottom: -1px; display: inline-block; color: black; height: 12px; width: 12px;"><div></div><div></div></span>`;
 // delay before we start monitoring, to give app time to upload the template etc
@@ -1084,6 +1089,7 @@ function labelStatus(status) {
   return labelledStatus;
 }
 
+
 /*
 * ###########################################
 * ## src/scripts/deployments.js
@@ -1352,6 +1358,7 @@ function destroyStack(kitId) {
     }
   });
 }
+
 
 /*
 * ###########################################
@@ -1966,11 +1973,13 @@ function cacheInstanceData() {
 
 addEventListener("INSTANCE_DATA_UPDATE", cacheInstanceData);
 
+
 /*
 * ###########################################
 * ## src/scripts/get-db-engines-and-instance-types.js
 * ###########################################
 */
+
 /* 
 * Get different db engines available
 */
@@ -2060,11 +2069,13 @@ function getAllDbInstances() {
   }
 }
 
+
 /*
 * ###########################################
 * ## src/scripts/sdk-commands.js
 * ###########################################
 */
+
 
 function runSdkCommand() {
     document.getElementById('sdk-output').hidden = false;
@@ -2159,11 +2170,13 @@ function preformatted(data, bool) {
 }
 document.getElementById("execute-sdk-button").addEventListener("click", runSdkCommand);
 
+
 /*
 * ###########################################
 * ## src/scripts/renderer.js
 * ###########################################
 */
+
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: MIT-0
 

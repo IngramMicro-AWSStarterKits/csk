@@ -4,3 +4,6 @@ parameters.json
 .exe
 .venv
 out
+.out
+cdk.out
+__pycache__
